@@ -13,44 +13,37 @@ interface TechStack {
    frontend: string[];
 };
 
-type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
+type ContactType = 'github' | 'linkedIn' | 'email';
 
 const techStack: TechStack = {
     devOps: [
         'GitLab',
         'GitHub',
-        'Cloudflare',
-        'Docker'
+        "Azure DevOps",
+        'Docker',
+        'Kubernetes',
+        "Oracle Cloud",
+        ".Net Aspire"
     ],
     frontend: [
-        'Angular',
         'JavaScript',
         'TypeScript',
-        'TailwindCSS',
-        'PrimeNG',
-        'Astro',
-        'Ionic',
-        'Stencil',
-        'Capacitor',
-        'SCSS',
         'Markdown',
-        'WordPress'
+        'Astro',
+        'Vue3',
     ],
     backend: [
-        'Supabase',
-        'Node.js',
-        'Bun',
-        'Deno',
-        'PostgreSQL',
-        'MySQL',
-        'S3 Storage',
-        'Resend'
+        'C#',
+        'Python',
+        '.Net Core',
+        ' Flask',
+        'Django'
     ]
 };
 
 // Developer profile
 const me: Developer = {
-    name: 'Dejan Vi.',
+    name: 'James Hsueh',
     skills: [
         ...techStack.devOps,
         ...techStack.backend,
@@ -59,7 +52,6 @@ const me: Developer = {
     interests: [
         'Open Source',
         'Security',
-        'Privacy',
         'Performance',
         'Self-Hosting',
         'Networking'
@@ -70,15 +62,11 @@ const me: Developer = {
 const contact = (type: ContactType): string => {
     switch (type) {
         case 'github':
-            return 'https://github.com/devidevio';
-        case 'twitter':
-            return 'https://x.com/devidev_io';
+            return 'https://github.com/codemachine0121';
         case 'linkedIn':
-            return 'https://www.linkedin.com/in/dejan-vi';
-        case 'xing':
-            return 'https://www.xing.com/profile/Dejan_Vintonjiv';
+            return 'www.linkedin.com/in/jameshsueh';
         case 'email':
-            return 'hi@devidev.io';
+            return 'asdfg55887@gmail.com';
         default:
             return 'Send fax.';
     }
